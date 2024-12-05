@@ -13,6 +13,20 @@ This repository contains code and data which corresponds to the paper [1]. The w
 
 [1] **Harry Anthony**, Konstantinos Kamnitsas “[Evaluating Reliability in Medical DNNs: A Critical Analysis of Feature and Confidence-Based OOD Detection](https://link.springer.com/chapter/10.1007/978-3-031-73158-7_15)” In: Uncertainty for Safe Utilization of Machine Learning in Medical Imaging. UNSURE 2024. 
 
+
+<p align="center">
+    <a href="https://youtu.be/aLJhQsk4IDY?si=rR8dU_t_cHw2YtJP" target="_blank">
+        <img src="figures/YouTube.jpg" width="600" />
+    </a>
+</p>
+<p align="center"><i>Watch my presentation of this project, given at the UNSURE Workshop at MICCAI 2024.</i></p>
+
+
+### &#128240; Updates
+- *5 December 2024:* I've added new pre-processing scripts to simplify the data setup process: `data/D7P/process_D7P.py` and `data/breastmnist/process_breastmnist.py`. Once the data is downloaded, simply run these scripts, and they will preprocess the data to make it fully compatible with this repository's code. Additionally, I've uploaded my presentation for this project — feel free to check it out!
+
+
+=======
 ### Table of Contents
 * [1. Out-of-distribution detection methods overview](#1-out-of-distribution-detection-methods-overview)
 * [2. Requirements](#2-requirements)
