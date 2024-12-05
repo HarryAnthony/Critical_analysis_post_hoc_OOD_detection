@@ -2,15 +2,21 @@
 This research was completed on two public Medical Datasets. To reproduce the results in [1], please download the datasets following the next instructions and place the data in the `data` directory. The configurations for each dataset are given in the `source/config` directory.
 
 ### i) 7-point criteria evaluation Database (D7P)
-The 7-point criteria evaluation Database (D7P) [3] is a dermatology dataset for the prediction of the 7-point skin lesion malignancy checklist. The dataset includes over 2000 2D images. More information about the data, along with instructions on how to download the data can be found [here](https://derm.cs.sfu.ca/Welcome.html). Once downloaded, the data should be placed in the `data/D7P` directory.
+The 7-point criteria evaluation Database (D7P) [3] is a dermatology dataset for the prediction of the 7-point skin lesion malignancy checklist. The dataset includes over 2000 2D images. More information about the data, along with instructions on how to download the data can be found [here](https://derm.cs.sfu.ca/Welcome.html). Once downloaded, follow these steps:
+- a) Ensure the downloaded directory `release_v0` is in the directory `data/D7P`.
+- b) Go to the directory `data/D7P`, and run the python3 file `process_D7P.py`. This will create csv files train, test and valid which are compatable with the repository's code. These will not include images with class Miscellaneous or Letingo.
+The data should now be compatable with the code. A big thanks to [Zeju Li](https://github.com/ZerojumpLine/Robust-Skin-Lesion-Classification/tree/main) for helping create this code. If there are any issues, please feel free to reach out!
+
 
 ### ii) BreastMNIST
 BreastMNIST [4,5] is a Breast Ultrasound Dataset from the collection [MedMNIST](https://medmnist.com/). The BreastMNIST dataset has three classes: Normal (no lesion), benign (bengin tumour), malignant (malignant tumour). The BreastMNIST dataset contains 780 images. BreastMNIST data can be downloaded [here](https://zenodo.org/records/10519652) or using the MedMNIST dataset API: 
 ```
 pip install medmnist
 ```
-Once downloaded, the data should be placed in the `data/BreastMNIST` directory.
-
+Once downloaded, follow these steps:
+- a) Extract the files from `breastmnist_224.npz` and place them into the directory `data/breastmnist`. This should include .npy files of images and labels for test, train and val.
+- b) Go to the directory `data/breastmnist`, and run the python3 file `process_breastmnist.py`. This will create csv files train, test and valid which are compatable with the repository's code.
+The code will classify the images into three classes (normal, benign, malignant) instead of the two classes from the breastmnist dataset, see [here for details](https://medmnist.com/). These labels were derived from [here](https://www.kaggle.com/datasets/aryashah2k/breast-ultrasound-images-dataset/data).
 
 ## New Data
 
