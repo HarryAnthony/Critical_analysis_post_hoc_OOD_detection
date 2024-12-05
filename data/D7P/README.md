@@ -1,0 +1,5 @@
+# 7-point criteria evaluation Database (D7P)
+The 7-point criteria evaluation Database (D7P) [3] is a dermatology dataset for the prediction of the 7-point skin lesion malignancy checklist. The dataset includes over 2000 2D images. More information about the data, along with instructions on how to download the data can be found [here](https://derm.cs.sfu.ca/Welcome.html). Once downloaded, follow these steps:
+- a) Ensure the downloaded directory `release_v0` is in the directory `data/D7P`.
+- b) Go to the directory `data/D7P`, and run the python3 file `process_D7P.py`. This will create csv files train, test and valid which are compatable with the repository's code. These will not include images with class Miscellaneous or Letingo.
+The data should now be compatable with the code. A big thanks to [Zeju Li](https://github.com/ZerojumpLine/Robust-Skin-Lesion-Classification/tree/main) for helping create this code. If there are any issues, please feel free to reach out!
